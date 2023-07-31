@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Rittika, I love you so much.</title>
+ <!-- add icon link -->
+ <link rel = "icon" href = 
+ "https://33.media.tumblr.com/d118026336bccd17c57790206dabdcb0/tumblr_ns98jo7gNI1t1dpc1o1_500.gif" 
+         type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div style="display:none">
+    <embed src=""/> 
+ </div>
+<style>
+
+.not-clickable-image { 
+  pointer-events: none; 
+}
+
+img {   
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+a { 
+  text-decoration: none;
+ }
+
+ p {text-align: center;}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+body  {
+  background-image: url("https://i.pinimg.com/originals/fc/01/fc/fc01fcf41d53c4cab99e05c2dcaf848f.gif");
+  background-color: #cccccc;
+  background-attachment: scroll;
+}
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('c:\Users\Coherce\Downloads\Angel.jpg');
+  min-height: 400px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("c:\Users\Coherce\Downloads\Angel.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/*scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(160, 214, 12); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #79920a; 
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<script>
+
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  modal.style.display = "block";
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  
+    // Get the modal
+  var modal = document.getElementById("w3-button w3-light-grey");
+  
+  
+  
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+
+<body>
+   
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>I made this one for you, as You're the best girlfriend ever so far, i'm so greatful to have someone like you in my life, thanks for reading this :D</p>
+    </div>
+  
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">I <span class="w3-hide-small">LOVE</span> YOU, RITTIKA</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">You're the best girlfriend ever, Rittika.</h3>
+  <p class="w3-center"><em>(1.8,23)</em></p>
+  <p>Rittika, i still can't believe, how kind was i before that god gifted me such a pretty angel like you? You're a magic. I love you so much you know, everyday, even if you're mine since so long, i still fall for you every single day my love. You're like a baby to me, i may be younger than you, but you're like a cute baby to me literally. I can't tell you how much i love you.
+    I love literally everything about you. Since the annual function era (during january) till today to the very future of ours, this will be an infinity love. I love you more than myself, you're my top most priority babe, your happiness is my happiness, your sadness is my sadness, when ur smiling, i'm smiling too! I like it when we both laugh together. Ijust feel like living in heaven
+  with you every single day. This feels so great to be with you always. I've been everywhere babe, looking for someone, someone who can please me and love me all life long, i've been everywhere babe searching for you hey, searching for you baby. Where have you been? Why didn't you met me before babe? We made so many memories in just 6 months, i can't believe how fast time went, literally pata bhi nahi chala.
+  This feels like a whole dream. I've been smiling and smiling and smiling looking at your texts and looking at you too. I'm so lucky that before i confessed to you, no one was able to take you :D Kyunki mai hi main hu hahahaha! I love every single thing about you my love, every single thing... Your sweet and cute voice, your cute laugh and giggle, your cute facial expressions, your pretty and big smile which sparkles your whole face,
+  your cateyes which attracts me, your kawai ears i want to touch them from down eeeeee, your eye-brows the way you move them saying "hm hm" that's just so cute baby, your pretty nose i will literally kiss it, your pink plum lips make me kiss you 24/7, the way your face becomes so cute and pretty when you smile oh my god, your neck and collorbone that attracts me towards you babe. The way you make me attracted towards you every single moment.
+  Oh wait, i'm already attracted towards you with feelings, mai bhi na hehehe, i have such strong feelings towards you my love, you're my whole universe, a day seems so boring without you, whenever you go out somewhere, or if you're sleeping, or maybe if you're on call with someone else, i miss you so much my baby, i miss you so much at those times. I can't live even a single second without you my baby, We met thrice till now, oh yes we will meet this month too, only if we lived a little more close, that would be a pure heaven fr.. 
+  I love calling you everyday, talking to you, hearing your voice is a whole pleasure to my ears. I miss you so much baby.</p>
+  
+  <p>Arvind's side>> 🌷</p>
+  <p>Do you remember the time, during febraury starting when i was in my marriage week?
+    i literally, missed you so much love. Since 15th of january, when we both got together that night, i didn't wanted to go to to punjab for that stupid wedding at all. I wanted to meet you at school, i missed your farewell, i missed all those days we could meet :(, but we did met thrice of four times hehe :)
+  I remember, the amount of jealousies i had. YES i got jealous of many things, i was and i AM a jalkukda. I still get jealous over many things because i love you most, and i want full attention of yours hehe. I wish we were together last year too, we could've have made so many memories together 😭.. Our first meet, that was fantastic! I can't believe i actually got hugged by someone>>> that feeling>>>>.. I was so happy inside! Like maybe i couldn't hug back at that moment cause i went blank, because first time in years i actually got hugged wow...
+  I always wanted someone who loves, someone who pleases me, cause it didn't feel right, when it was late at night and i was just me in my dreams. It's better now because you're all over my brain, heart and dreams. A late night dream is incomplete for me without having you. A day is incomplete for me, without talking to you. You're my one and only, top most, first, and only priority. I want to talk to you my whole day. I can't live without you. I am so greatful to have someone like you, who actually loves me in my life. Thank you so much Rittika, my love. Oh btw <a href="https://tenor.com/view/i-love-you-gif-26324325" title="Click crow na" batarget="_blank" class="w3-hover-text-pink">can you try clicking/pressing here? Bss yaha par click karo.</a> </p>
+
+  <p>Rittika's side>> 🌷</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>My Lovely Guddu.</b></p><br>
+      <img href="https://www.instagram.com/lifeneedstete/" src="Best Baby Forever, my guddu..jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Guddu (Rittika)" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large">
+      <p>Everything reminds me of you love. I still can't believe how close we have gotten so far, from that lovely night of 15th january - today. I know many stuffs happened between us which could easily lead us to seperatation from each other but we somehow managed to control ourselves and not break our relationship apart, that's the true love, baby! I know i might be not good as perfect, or someone better than you expect, i know you told me you stopped expecting from me, still we're together i'm so greatful.. I know i might not be a perfect one,
+        but i will be one perfect, for you, just for you, because i love you more than anything babe. i'll be a better figure which you'll love more than anything else, i'll be anything you ask me for. i will do anything you ask me for. I will be loving you always and forever until i'm alive. I want your SAFETY RITTIKA, please be safe forever okay? I can't wait to marry you in future. It's gonna be the best day in my life so far fr. I still can't believe you're mine just how.. being a whole mid (3/10) got such a 100/10 perfect loving girl, it still does feels like a dream.
+        I will give you flowers, i will give you love, i will give you everything you ask me for and i'll never deny you. i may be a dumb and sometimes not figure out by myself that what do you want but still, i'll give you anything you ask me for. I'll kiss your whole body and love you both outside and inside. Please do not ever leave me, on a serious note, do not ever leave me please love. I love you so much, more than anything else i love you far more.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Your Arvind loves you soooo much ^^.. Stay happiest and safe forever love!</p>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" title="Rittika upar chalogi?" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ohh upar chalogi??</a>
+
+  <p>Yep, it's made by your love, <a href="https://www.instagram.com/savarixx/" title="Tumhara sexy banda" batarget="_blank" class="w3-hover-text-green">ARVIND.</a></p>
+  <p>(Well if you're a fellow reader, you may check out <a href="https://www.instagram.com/savarixx/" title="Tumhara sexy banda" batarget="_blank" class="w3-hover-text-green">THIS PAGE.</a>)</p>
+  
+  <audio controls>
+    <source src="my_lovely_speech.m4a" type="audio/ogg">
+    <source src="my_lovely_speech.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <p>i miss you.</p>
+  <!-- The Modal -->
+<div id="w3-button w3-light-grey" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>We're gonna be together forever.</p>
+  </div>
+
+</div>
+
+</footer>
+
+</body>
+
+
+</html>
